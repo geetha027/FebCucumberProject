@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="48.318063">
+<testcase classname="To validate registration form functionality of demoqa application" name="To verify the registration form with invalid details of demoqa application" time="20.934442">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.DemoqaRegistrationForm.toPassInvalidEmailIntoEmailfield(DemoqaRegistrationForm.java:43)&#13;&#10;&#9;at ✽.To pass invalid email into emailfield(src/test/resources/Demoqa.feature:9)&#13;&#10;"><![CDATA[When To pass the url of demoqa application..................................passed
+And To pass invalid firstname into firstname field..........................passed
+And To pass invalid lastname into lastname field............................passed
+And To pass invalid email into emailfield...................................failed
+And To choose gender in gender radio button field...........................skipped
+And To pass invalid mobilenumber into mobilenumber field....................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.DemoqaRegistrationForm.toPassInvalidEmailIntoEmailfield(DemoqaRegistrationForm.java:43)
+	at ✽.To pass invalid email into emailfield(src/test/resources/Demoqa.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="To validate login functionality of facebook application" name="To validate invalid username and invalid password of fb login" time="5.564769">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.FacebookFunctionality.to_pass_invalid_password_into_password_field(FacebookFunctionality.java:41)&#13;&#10;&#9;at ✽.To pass invalid password into password field(src/test/resources/FacebookLogin.feature:8)&#13;&#10;"><![CDATA[When To launch the url of facebook application..............................passed
+And To pass invalid username into email field...............................passed
+And To pass invalid password into password field............................failed
+And To click login button...................................................skipped
+And To check whether navigate to home page or not...........................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.FacebookFunctionality.to_pass_invalid_password_into_password_field(FacebookFunctionality.java:41)
+	at ✽.To pass invalid password into password field(src/test/resources/FacebookLogin.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="To validate login functionality of facebook application" name="To validate the positive and negative combinations" time="5.497832">
+<system-out><![CDATA[When user has to launch the url of application..............................passed
+And user has to pass the "java@gmail.com"email data in email field..........passed
+And user has to pass the "12345"password data in password field.............passed
+And user has to click the login button......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate login functionality of facebook application" name="To validate the positive and negative combinations 2" time="5.49499">
+<system-out><![CDATA[When user has to launch the url of application..............................passed
+And user has to pass the "cucumber@gmail.com"email data in email field......passed
+And user has to pass the "6789"password data in password field..............passed
+And user has to click the login button......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate login functionality of facebook application" name="To validate the positive and negative combinations 3" time="5.410304">
+<system-out><![CDATA[When user has to launch the url of application..............................passed
+And user has to pass the "framework@gmail.com"email data in email field.....passed
+And user has to pass the "101112"password data in password field............passed
+And user has to click the login button......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate login functionality of facebook application" name="To validate the positive and negative combinations 4" time="5.415726">
+<system-out><![CDATA[When user has to launch the url of application..............................passed
+And user has to pass the "sql@gmail.com"email data in email field...........passed
+And user has to pass the "sql004"password data in password field............passed
+And user has to click the login button......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
